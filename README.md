@@ -16,6 +16,46 @@ docpad install restapi inlinegui
 ```
 
 
+## Development
+
+Install global dependencies:
+
+```
+npm install -g coffee-script docpad
+```
+
+Setup the docpad plugin:
+
+```
+git clone https://github.com/docpad/docpad-plugin-inlinegui.git inlinegui
+cd inlinegui
+npm install
+cake compile
+npm link
+```
+
+Setup the inline gui interface:
+
+```
+git clone https://github.com/webwrite/inlinegui.git inlinegui.docpad
+cd inlinegui.docpad
+docpad install
+docpad run --port 9779
+```
+
+Setup the test website:
+
+```
+git clone https://github.com/docpad/html5-boilerplate.docpad.git editable.docpad
+cd editable.docpad
+docpad install
+docpad install restapi inlinegui
+docpad run --port 9778
+```
+
+Open the inline gui interface at http://localhost:9779/ in your web browser which will communicate with the website at http://localhost:9778/ via the rest api plugin
+
+
 
 ## History
 [You can discover the history inside the `History.md` file](https://github.com/bevry/docpad-plugin-inlinegui/blob/master/History.md#files)
