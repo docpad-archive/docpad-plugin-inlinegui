@@ -1,0 +1,50 @@
+{
+  "name": "docpad-plugin-inlinegui",
+  "version": "2.0.0",
+  "description": "Adds the Web Write Inline GUI/CMS to your DocPad project",
+  "homepage": "https://github.com/docpad/docpad-plugin-inlinegui",
+  "keywords": [
+    "docpad",
+    "docpad-plugin",
+    "crud",
+    "rest",
+    "api"
+  ],
+  "author": "Myplanet Internet Solutions Ltd. <hello@myplanetdigital.com> (http://www.myplanetdigital.com/)",
+  "maintainers": [
+    "Neil Taylor <neil.t@myplanetdigital.com> (https://github.com/neilbaylorrulez)",
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+  ],
+  "contributors": [
+    "Neil Taylor <neil.t@myplanetdigital.com> (https://github.com/neilbaylorrulez)",
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+  ],
+  "bugs": {
+    "url": "https://github.com/docpad/docpad-plugin-inlinegui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/docpad/docpad-plugin-inlinegui/issues"
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "dependencies": {
+    "taskgroup": "~3.2.0"
+  },
+  "peerDependencies": {
+    "docpad": ">=6 <7",
+    "docpad-plugin-restapi": "~6"
+  },
+  "devDependencies": {
+    "rimraf": "~2.2.2",
+    "chai": "~1.7.2",
+    "superagent": "~0.15.4",
+    "coffee-script": "~1.6.2",
+    "docpad": ">=6 <7"
+  },
+  "main": "./out/inlinegui.plugin.js",
+  "scripts": {
+    "test": "node ./out/inlinegui.test.js"
+  }
+}
