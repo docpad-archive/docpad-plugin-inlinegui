@@ -32,6 +32,7 @@ cd inlinegui
 npm install
 cake compile
 npm link
+cake dev
 ```
 
 Setup the inline gui interface:
@@ -49,7 +50,8 @@ Setup the test website:
 git clone https://github.com/docpad/html5-boilerplate.docpad.git editable.docpad
 cd editable.docpad
 docpad install
-docpad install restapi inlinegui
+docpad install restapi
+npm link docpad-plugin-inlinegui
 docpad run --port 9778
 ```
 
