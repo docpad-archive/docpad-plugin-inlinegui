@@ -25,3 +25,15 @@ module.exports = (BasePlugin) ->
 
 			# Chain
 			@
+
+		# Extend Template Data
+		extendTemplateData: (opts) ->
+			opts.templateData.editable = @editable.bind(@)
+
+		# Editable
+		editable: (file, property, value) ->
+			file = file.toJSON?() or file
+			value ?= file[property]
+			return """
+				<span class="inlinegui-editable" about="#{file.url}" property="#{property}">#{value}</span>
+				"""
