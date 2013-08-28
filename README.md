@@ -47,7 +47,7 @@ docpad run --port 9779
 Setup the test website:
 
 ```
-git clone https://github.com/docpad/html5-boilerplate.docpad.git editable.docpad
+git clone https://github.com/docpad/editable.docpad.git editable.docpad
 cd editable.docpad
 docpad install
 docpad install restapi
