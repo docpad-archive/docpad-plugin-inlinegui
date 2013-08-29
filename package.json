@@ -1,6 +1,6 @@
 {
   "name": "docpad-plugin-inlinegui",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Adds the Web Write Inline GUI/CMS to your DocPad project",
   "homepage": "https://github.com/docpad/docpad-plugin-inlinegui",
   "keywords": [
