@@ -27,6 +27,7 @@ npm install -g coffee-script docpad
 Setup the docpad plugin:
 
 ```
+cd ~
 git clone https://github.com/docpad/docpad-plugin-inlinegui.git inlinegui
 cd inlinegui
 npm install
@@ -38,6 +39,7 @@ cake dev
 Setup the inline gui interface:
 
 ```
+cd ~
 git clone https://github.com/webwrite/inlinegui.git inlinegui.docpad
 cd inlinegui.docpad
 docpad install
@@ -47,6 +49,7 @@ docpad run --port 9779
 Setup the test website:
 
 ```
+cd ~
 git clone https://github.com/docpad/editable.docpad.git editable.docpad
 cd editable.docpad
 docpad install
