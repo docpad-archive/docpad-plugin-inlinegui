@@ -1,0 +1,11 @@
+<html>
+<head>
+	<title><%= @document.title %></title>
+	<%- @getBlock('styles').toHTML() %>
+</head>
+<body>
+	<%- @editable(attribute: 'title', element: 'h1') %>
+	<%- @editable(attribute: 'content', value: @content) %>
+	<%- @getBlock('scripts').toHTML() %>
+</body>
+</html>

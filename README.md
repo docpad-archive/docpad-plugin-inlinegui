@@ -1,10 +1,15 @@
 # [Inline GUI](https://github.com/webwrite/inlinegui) Plugin for [DocPad](http://docpad.org)
 
-[![Build Status](https://secure.travis-ci.org/docpad/docpad-plugin-inlinegui.png?branch=master)](http://travis-ci.org/docpad/docpad-plugin-inlinegui "Check this project's build status on TravisCI")
-[![NPM version](https://badge.fury.io/js/docpad-plugin-inlinegui.png)](https://npmjs.org/package/docpad-plugin-inlinegui "View this project on NPM")
-[![Gittip donate button](http://badgr.co/gittip/docpad.png)](https://www.gittip.com/docpad/ "Donate weekly to this project using Gittip")
-[![Flattr donate button](https://raw.github.com/balupton/flattr-buttons/master/badge-89x18.gif)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
-[![PayPayl donate button](https://www.paypalobjects.com/en_AU/i/btn/btn_donate_SM.gif)](https://www.paypal.com/au/cgi-bin/webscr?cmd=_flow&SESSION=IHj3DG3oy_N9A9ZDIUnPksOi59v0i-EWDTunfmDrmU38Tuohg_xQTx0xcjq&dispatch=5885d80a13c0db1f8e263663d3faee8d14f86393d55a810282b64afed84968ec "Donate once-off to this project using Paypal")
+<!-- BADGES/ -->
+
+[![Build Status](http://img.shields.io/travis-ci/docpad/docpad-plugin-inlinegui.png?branch=master)](http://travis-ci.org/docpad/docpad-plugin-inlinegui "Check this project's build status on TravisCI")
+[![NPM version](http://badge.fury.io/js/docpad-plugin-inlinegui.png)](https://npmjs.org/package/docpad-plugin-inlinegui "View this project on NPM")
+[![Gittip donate button](http://img.shields.io/gittip/bevry.png)](https://www.gittip.com/bevry/ "Donate weekly to this project using Gittip")
+[![Flattr donate button](http://img.shields.io/flattr/donate.png?color=yellow)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
+[![PayPayl donate button](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
+
+<!-- /BADGES -->
+
 
 Adds the [Web Write Inline GUI/CMS](https://github.com/webwrite/inlinegui) to your [DocPad](http://docpad.org) project
 
@@ -15,61 +20,78 @@ Adds the [Web Write Inline GUI/CMS](https://github.com/webwrite/inlinegui) to yo
 docpad install restapi inlinegui
 ```
 
+## Usage
 
-## Development
-
-Install global dependencies:
-
-```
-npm install -g coffee-script docpad
-```
-
-Setup the docpad plugin:
+Output the elements that you want to edit:
 
 ```
-cd ~
-git clone https://github.com/docpad/docpad-plugin-inlinegui.git inlinegui
-cd inlinegui
-npm install
-cake compile
-npm link
-cake dev
+<%- @editable(item: @document, property: 'title', element: 'h1') %>
+<%- @editable(item: @document, property: 'content', value: @content) %>
 ```
 
-Setup the inline gui interface:
-
-```
-cd ~
-git clone https://github.com/webwrite/inlinegui.git inlinegui.docpad
-cd inlinegui.docpad
-docpad install
-docpad run --port 9779
-```
-
-Setup the test website:
-
-```
-cd ~
-git clone https://github.com/docpad/editable.docpad.git editable.docpad
-cd editable.docpad
-docpad install
-docpad install restapi
-npm link docpad-plugin-inlinegui
-docpad run --port 9778
-```
-
-Open the inline gui interface at http://localhost:9779/ in your web browser which will communicate with the website at http://localhost:9778/ via the rest api plugin
+Edit them by accessing `/inlinegui/` on your server.
 
 
+<!-- HISTORY/ -->
 
 ## History
-[You can discover the history inside the `History.md` file](https://github.com/bevry/docpad-plugin-inlinegui/blob/master/History.md#files)
+[Discover the change history by heading on over to the `History.md` file.](https://github.com/docpad/docpad-plugin-inlinegui/blob/master/History.md#files)
+
+<!-- /HISTORY -->
 
 
-## Contributing
-[You can discover the contributing instructions inside the `Contributing.md` file](https://github.com/bevry/docpad-plugin-inlinegui/blob/master/Contributing.md#files)
+<!-- CONTRIBUTE/ -->
 
+## Contribute
+
+[Discover how you can contribute by heading on over to the `Contributing.md` file.](https://github.com/docpad/docpad-plugin-inlinegui/blob/master/Contributing.md#files)
+
+<!-- /CONTRIBUTE -->
+
+
+<!-- BACKERS/ -->
+
+## Backers
+
+### Maintainers
+
+These amazing people are maintaining this project:
+
+- Neil Taylor <neil.t@myplanetdigital.com> (https://github.com/neilbaylorrulez)
+- Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)
+
+### Sponsors
+
+These amazing people have contributed finances to this project:
+
+- Myplanet Digital <hello@myplanetdigital.com> (http://www.myplanetdigital.com)
+
+Become a sponsor!
+
+[![Gittip donate button](http://img.shields.io/gittip/bevry.png)](https://www.gittip.com/bevry/ "Donate weekly to this project using Gittip")
+[![Flattr donate button](http://img.shields.io/flattr/donate.png?color=yellow)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
+[![PayPayl donate button](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
+
+### Contributors
+
+These amazing people have contributed code to this project:
+
+- Benjamin Lupton <b@lupton.cc> (https://github.com/balupton) - [view contributions](https://github.com/docpad/docpad-plugin-inlinegui/commits?author=balupton)
+- Neil Taylor <neil.t@myplanetdigital.com> (https://github.com/neilbaylorrulez) - [view contributions](https://github.com/docpad/docpad-plugin-inlinegui/commits?author=neilbaylorrulez)
+
+[Become a contributor!](https://github.com/docpad/docpad-plugin-inlinegui/blob/master/Contributing.md#files)
+
+<!-- /BACKERS -->
+
+
+<!-- LICENSE/ -->
 
 ## License
-Licensed under the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT License](http://creativecommons.org/licenses/MIT/)
-<br/>Copyright &copy; 2013+ [Myplanet Internet Solutions Ltd.](http://www.myplanetdigital.com/) <hello@myplanetdigital.com>
+
+Licensed under the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT license](http://creativecommons.org/licenses/MIT/)
+
+Copyright &copy; Bevry Pty Ltd <us@bevry.me> (http://bevry.me)
+
+<!-- /LICENSE -->
+
+

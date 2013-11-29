@@ -1,8 +1,18 @@
 {
   "name": "docpad-plugin-inlinegui",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Adds the Web Write Inline GUI/CMS to your DocPad project",
   "homepage": "https://github.com/docpad/docpad-plugin-inlinegui",
+  "license": {
+    "type": "MIT"
+  },
+  "badges": {
+    "travis": true,
+    "npm": true,
+    "gittip": "bevry",
+    "flattr": "344188/balupton-on-Flattr",
+    "paypal": "QB8GQPZAH84N6"
+  },
   "keywords": [
     "docpad",
     "docpad-plugin",
@@ -10,37 +20,40 @@
     "rest",
     "api"
   ],
-  "author": "Myplanet Internet Solutions Ltd. <hello@myplanetdigital.com> (http://www.myplanetdigital.com/)",
+  "author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
+  "sponsors": [
+    "Myplanet Digital <hello@myplanetdigital.com> (http://www.myplanetdigital.com)"
+  ],
   "maintainers": [
     "Neil Taylor <neil.t@myplanetdigital.com> (https://github.com/neilbaylorrulez)",
     "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
   ],
   "contributors": [
-    "Neil Taylor <neil.t@myplanetdigital.com> (https://github.com/neilbaylorrulez)",
-    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)",
+    "Neil Taylor <neil.t@myplanetdigital.com> (https://github.com/neilbaylorrulez)"
   ],
   "bugs": {
     "url": "https://github.com/docpad/docpad-plugin-inlinegui/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/docpad/docpad-plugin-inlinegui/issues"
+    "url": "https://github.com/docpad/docpad-plugin-inlinegui.git"
   },
   "engines": {
     "node": ">=0.8"
   },
-  "dependencies": {
-    "taskgroup": "~3.2.0"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "docpad": "6",
     "docpad-plugin-restapi": "2"
   },
   "devDependencies": {
+    "docpad": "6",
     "rimraf": "~2.2.2",
-    "chai": "~1.7.2",
+    "chai": "~1.8.1",
     "superagent": "~0.15.4",
-    "coffee-script": "~1.6.2"
+    "coffee-script": "~1.6.2",
+    "projectz": "~0.2.7"
   },
   "main": "./out/inlinegui.plugin.js",
   "scripts": {

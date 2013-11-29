@@ -1,9 +1,0 @@
-<html>
-<head>
-	<title>Test Page</title>
-	<%- @getBlock('styles').toHTML() %>
-</head>
-<body>
-	<%- @getBlock('scripts').toHTML() %>
-</body>
-</html>

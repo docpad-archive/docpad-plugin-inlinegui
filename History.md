@@ -1,4 +1,7 @@
-## History
+# History
+
+- v2.0.3 November 29, 2013
+	- Semi-working release
 
 - v2.0.2 August 30, 2013
 	- Fixed peerDependencies warning

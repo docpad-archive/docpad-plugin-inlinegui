@@ -7,8 +7,9 @@ module.exports = (BasePlugin) ->
 
 		# Plugin configuration
 		config:
-			script: 'http://localhost:9779/scripts/inline.js'
-			stylesheet: 'http://localhost:9779/styles/inline.css'
+			url: 'http://webwrite.github.io/inlinegui/'
+			script: '/inlinegui/script.js'
+			stylesheet: '/inlinegui/style.css'
 
 		# Populate Collections
 		# Used to inject our scripts block with our socket generate listener
@@ -28,12 +29,31 @@ module.exports = (BasePlugin) ->
 
 		# Extend Template Data
 		extendTemplateData: (opts) ->
-			opts.templateData.editable = @editable.bind(@)
+			opts.templateData.editable ?= ({item, attribute, value, element, url}) ->
+				item ?= @document
+				item = item.toJSON?() ? item
 
-		# Editable
-		editable: (file, property, value) ->
-			file = file.toJSON?() or file
-			value ?= file[property]
-			return """
-				<span class="inlinegui-editable" about="#{file.url}" property="#{property}">#{value}</span>
-				"""
+				value ?= item[attribute]
+
+				url ?= item.url
+
+				element ?= 'div'
+
+				return """
+					<#{element} class="inlinegui-editable" about="#{url}" property="#{attribute}">#{value}</#{element}>
+					"""
+
+		# Server extension
+		serverExtend: ({serverExpress}) ->
+			plugin = @
+
+			serverExpress.get '/inlinegui/script.js', (req, res) ->
+				res.redirect(302, plugin.getConfig().url+'scripts/inline-bundled.js')
+
+			serverExpress.get '/inlinegui/style.css', (req, res) ->
+				res.redirect(302, plugin.getConfig().url+'styles/inline.css')
+
+			serverExpress.get '/inlinegui/*', (req, res) ->
+				res.redirect(302, plugin.getConfig().url+req.params[0])
+
+			true
