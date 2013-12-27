@@ -35,7 +35,7 @@ Edit them by accessing `/inlinegui/` on your server.
 <!-- HISTORY/ -->
 
 ## History
-[Discover the change history by heading on over to the `History.md` file.](https://github.com/docpad/docpad-plugin-inlinegui/blob/master/History.md#files)
+[Discover the change history by heading on over to the `HISTORY.md` file.](https://github.com/docpad/docpad-plugin-inlinegui/blob/master/HISTORY.md#files)
 
 <!-- /HISTORY -->
 
@@ -44,7 +44,7 @@ Edit them by accessing `/inlinegui/` on your server.
 
 ## Contribute
 
-[Discover how you can contribute by heading on over to the `Contributing.md` file.](https://github.com/docpad/docpad-plugin-inlinegui/blob/master/Contributing.md#files)
+[Discover how you can contribute by heading on over to the `CONTRIBUTING.md` file.](https://github.com/docpad/docpad-plugin-inlinegui/blob/master/CONTRIBUTING.md#files)
 
 <!-- /CONTRIBUTE -->
 
@@ -76,10 +76,10 @@ Become a sponsor!
 
 These amazing people have contributed code to this project:
 
-- Benjamin Lupton <b@lupton.cc> (https://github.com/balupton) - [view contributions](https://github.com/docpad/docpad-plugin-inlinegui/commits?author=balupton)
-- Neil Taylor <neil.t@myplanetdigital.com> (https://github.com/neilbaylorrulez) - [view contributions](https://github.com/docpad/docpad-plugin-inlinegui/commits?author=neilbaylorrulez)
+- [Benjamin Lupton](https://github.com/balupton) <b@lupton.cc> — [view contributions](https://github.com/docpad/docpad-plugin-inlinegui/commits?author=balupton)
+- [Neil Taylor](https://github.com/neilbaylorrulez) <neil.t@myplanetdigital.com> — [view contributions](https://github.com/docpad/docpad-plugin-inlinegui/commits?author=neilbaylorrulez)
 
-[Become a contributor!](https://github.com/docpad/docpad-plugin-inlinegui/blob/master/Contributing.md#files)
+[Become a contributor!](https://github.com/docpad/docpad-plugin-inlinegui/blob/master/CONTRIBUTING.md#files)
 
 <!-- /BACKERS -->
 
