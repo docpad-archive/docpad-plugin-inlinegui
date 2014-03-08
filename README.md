@@ -20,6 +20,7 @@ Adds the [Web Write Inline GUI/CMS](https://github.com/webwrite/inlinegui) to yo
 ## Install
 
 ```
+npm install --save backbone
 docpad install restapi inlinegui
 ```
 
