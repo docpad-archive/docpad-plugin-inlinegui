@@ -48,7 +48,7 @@ module.exports = (BasePlugin) ->
 			plugin = @
 
 			serverExpress.get '/inlinegui/script.js', (req, res) ->
-				res.redirect(302, plugin.getConfig().url+'scripts/inline-bundled.js')
+				res.redirect(302, plugin.getConfig().url+'scripts/inline.js')
 
 			serverExpress.get '/inlinegui/style.css', (req, res) ->
 				res.redirect(302, plugin.getConfig().url+'styles/inline.css')

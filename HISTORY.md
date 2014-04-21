@@ -1,5 +1,9 @@
 # History
 
+- v2.0.4 April 21, 2014
+	- Updated for new inline script location
+	- Updated dependencies
+
 - v2.0.3 November 29, 2013
 	- Semi-working release
 

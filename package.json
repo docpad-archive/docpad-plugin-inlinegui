@@ -1,6 +1,6 @@
 {
   "name": "docpad-plugin-inlinegui",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Adds the Web Write Inline GUI/CMS to your DocPad project",
   "homepage": "https://github.com/docpad/docpad-plugin-inlinegui",
   "license": {
@@ -53,9 +53,9 @@
   "devDependencies": {
     "docpad": "6",
     "rimraf": "~2.2.5",
-    "chai": "~1.8.1",
-    "superagent": "~0.16.0",
-    "coffee-script": "~1.6.2",
+    "chai": "~1.9.1",
+    "superagent": "~0.17.0",
+    "coffee-script": "~1.7.1",
     "projectz": "~0.3.9"
   },
   "main": "./out/inlinegui.plugin.js",
