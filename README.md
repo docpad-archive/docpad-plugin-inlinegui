@@ -29,8 +29,8 @@ docpad install restapi inlinegui
 Output the elements that you want to edit:
 
 ```
-<%- @editable(item: @document, property: 'title', element: 'h1') %>
-<%- @editable(item: @document, property: 'content', value: @content) %>
+<%- @editable(item: @document, attribute: 'title', element: 'h1') %>
+<%- @editable(item: @document, attribute: 'content', value: @content) %>
 ```
 
 Edit them by accessing `/inlinegui/` on your server.
