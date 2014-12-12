@@ -57,7 +57,7 @@
     "rimraf": "~2.2.5",
     "chai": "~1.9.1",
     "superagent": "~0.17.0",
-    "coffee-script": "~1.7.1",
+    "coffee-script": "~1.8.0",
     "projectz": "~0.3.17"
   },
   "main": "./out/inlinegui.plugin.js",
